@@ -1,0 +1,23 @@
+{
+  "port": "8081",
+  "host": "localhost",
+  "open": true,
+  "livereload": true,
+  "root": "dist/",
+  "images": {
+    "input": "src/img/*",
+    "output": "dist/img/"
+  },
+  "scripts": {
+    "input": "src/js/*",
+    "output": "dist/js/"
+  },
+  "styles": {
+    "input": "src/css/*",
+    "output": "dist/css/"
+  },
+  "templates": {
+    "input": "src/*.html",
+    "output": "dist/"
+  }
+}
