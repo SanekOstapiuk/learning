@@ -11,7 +11,10 @@ npm start
 ```
 
 
-TODO
+## TODO
+
 [] write smth styles
+
 [x] write smth scripts
+
 [] Roma: fix bugs
