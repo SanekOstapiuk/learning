@@ -1,5 +1,5 @@
 {
-  "port": "8081",
+  "port": "8050",
   "host": "localhost",
   "open": true,
   "livereload": true,
