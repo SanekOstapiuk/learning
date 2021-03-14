@@ -5,6 +5,7 @@ const open = require('gulp-open');
 const path = require('path');
 const clean = require('gulp-clean');
 const fs = require('fs');
+const sass = require('gulp-sass');
 
 // Configs
 const config = require('./configuration/base.json');
@@ -57,6 +58,7 @@ const buildScripts = function() {
 
 const buildStyles = function() {
   return src(fullPath(config.styles.input))
+  .pipe(sass().on('error', sass.logError))
   .pipe(dest(fullPath(config.styles.output)))
   .pipe(connect.reload());
 }
