@@ -1,6 +1,10 @@
-body {
-  &:before {
-    content: 'before';
-  }
-  background-color: green;
-}
+@import "reset";
+
+// Mixins and variables
+@import "variables/main";
+
+// Elements or sections styles
+@import "elements/main";
+
+// Pages styles
+@import "pages/main";

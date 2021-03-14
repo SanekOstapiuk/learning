@@ -13,7 +13,7 @@
     "output": "dist/js/"
   },
   "styles": {
-    "input": "src/style/*.scss",
+    "input": "src/style/**/*.scss",
     "output": "dist/style/"
   },
   "templates": {
