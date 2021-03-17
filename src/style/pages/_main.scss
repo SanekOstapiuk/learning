@@ -1,1 +1,35 @@
 @import "homepage";
+
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  .header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+
+    border-bottom: 2px solid $black;
+
+    .nav__link{
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+.main{
+
+  background-image: image("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-color: $background;
+  height: 750px;
+  width: 100%;
+}
