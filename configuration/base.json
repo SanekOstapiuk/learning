@@ -5,7 +5,7 @@
   "livereload": true,
   "root": "dist/",
   "images": {
-    "input": "src/img/*",
+    "input": "src/img/**/*",
     "output": "dist/img/"
   },
   "scripts": {
