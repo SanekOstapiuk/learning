@@ -1,0 +1,13 @@
+.icon {
+  fill: currentColor;
+  color: inherit;
+  width: 1em;
+
+  &--bigger {
+    width: 2em;
+  }
+
+  &--red {
+    fill: red;
+  }
+}

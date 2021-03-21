@@ -1,12 +1,24 @@
 {
   "port": "8050",
   "host": "localhost",
-  "open": true,
+  "open": false,
   "livereload": true,
   "root": "dist/",
   "images": {
-    "input": "src/img/**/*",
+    "input": "src/img/**/*.{jpg,png,jpeg,gif}",
     "output": "dist/img/"
+  },
+  "svg": {
+    "input": "src/img/svg/**/*.svg",
+    "output": "dist/img/",
+    "conf": {
+      "mode": {
+        "symbol": {
+          "dest": "",
+          "sprite": "svg/sprite.svg"
+        }
+      }
+    }
   },
   "scripts": {
     "input": "src/js/*",

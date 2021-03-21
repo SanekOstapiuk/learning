@@ -6,6 +6,7 @@ const path = require('path');
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sass = require('gulp-sass');
+const svgSprite = require('gulp-svg-sprite');
 
 // Configs
 const config = require('./configuration/base.json');
@@ -37,6 +38,7 @@ const startWatcher = function() {
   watch(fullPath(config.styles.input), buildStyles);
   watch(fullPath(config.scripts.input), buildScripts);
   watch(fullPath(config.images.input), cpImages);
+  watch(fullPath(config.svg.input), buildSVGSprite);
 }
 
 const cleanDist = function() {
@@ -54,6 +56,13 @@ const buildScripts = function() {
   return src(fullPath(config.scripts.input))
   .pipe(dest(fullPath(config.scripts.output)))
   .pipe(connect.reload());
+}
+
+const buildSVGSprite = function() {
+  return src(fullPath(config.svg.input))
+  .pipe(svgSprite(config.svg.conf))
+  .pipe(dest(fullPath(config.svg.output)))
+  .pipe(connect.reload())
 }
 
 const buildStyles = function() {
@@ -75,6 +84,7 @@ exports.default = series(
     buildIndex,
     buildScripts,
     buildStyles,
+    buildSVGSprite,
     cpImages
   ),
   parallel(
