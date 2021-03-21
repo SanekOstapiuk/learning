@@ -1,0 +1,33 @@
+.footer{
+  background: #3a3e64;
+}
+.footer__inner{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 0;
+
+  }
+
+  .footer__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 14px;
+
+    width: 33.33333%;
+  }
+.footer__title{
+font-weight: 700;
+text-transform: uppercase;
+
+margin-bottom: 10px;
+
+}
+
+.footer__text{
+
+line-height: 1.6;
+opacity: 50%;
+
+}
