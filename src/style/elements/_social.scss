@@ -5,22 +5,21 @@
 .social--footer{
   justify-content: center;
 
-  & .social__item{
+  .social__item{
     background: none;
     border-width: 2px;
-    border-color: #fff;
     border-radius: 2px;
-  }
+    border-color: #fff;
 
-  & .social__icon{
-    fill: #fff;
+    &:hover{
+      border-color: $black;
+    }
+
+  }
+  .social__icon{
+    fill:#fff;
   }
 }
-
-.social--footer{
-  justify-content: center;
-}
-
 
 
 .social__item{
@@ -37,13 +36,13 @@
   transition: background 0.1s linear;
 
   &:hover{
-    background: $grey;
+    .social__icon{
+      fill:$black;
+    }
+
     border-color: $black;
   }
 
-  &:hover .social__icon{
-    fill:$black;
-  }
 
   &:first-child{
     margin-left: 0;
@@ -55,6 +54,5 @@
   display: block;
   height: 18px;
   width: 100%;
-}
 
-.
+}
