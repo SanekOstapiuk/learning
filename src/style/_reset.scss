@@ -40,3 +40,24 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+
+button{
+
+  background: none;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:focus{
+    outline: none;
+
+  }
+
+  &:active{
+      transform: scale(0.99);
+  }
+}
