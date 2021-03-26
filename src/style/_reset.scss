@@ -53,11 +53,5 @@ button{
   -moz-appearance: none;
 
   &:focus{
-    outline: none;
-
-  }
-
-  &:active{
-      transform: scale(0.99);
-  }
+    outline: none;}
 }
