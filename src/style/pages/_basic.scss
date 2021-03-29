@@ -407,11 +407,11 @@ opacity: 1;
 
 // *************MEDIA*************
 
-@media (max-width: $larger-desktop-width) {
+@media (max-width: $larger-desktop) {
 
 }
 
-@media (max-width: $large-desktop-width) {
+@media (max-width: $large-desktop) {
   .main__title{
     font-size: 42px;
   }
@@ -443,7 +443,7 @@ opacity: 1;
 
 }
 
-@media (max-width: $desktop-width){
+@media (max-width: $desktop){
 
   // ****************MAIN **************
   .main__container{
@@ -463,7 +463,7 @@ opacity: 1;
 
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet) {
 
   // ****************HEADER*********************
   .header nav {
@@ -522,7 +522,7 @@ opacity: 1;
   }
 
   .response__img{
-    top: 0;
+    top: 15px;
     left: 0;
     transform: none;
 
@@ -535,6 +535,11 @@ opacity: 1;
     margin: 25px 0;
     text-align: center;
     padding-left: 0;
+  }
+
+  .response__text{
+    font-size: 25px;
+    margin-bottom: 25px;
   }
 
   // ***************** DOWNLOAD ************
@@ -558,7 +563,7 @@ opacity: 1;
   }
 }
 
-@media (max-width: $phone-width) {
+@media (max-width: $phone) {
 
   // ************************ MAIN ****************************
   .main__title{

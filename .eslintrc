@@ -16,7 +16,6 @@
     "brace-style": 2,
     "camelcase": 2,
     "comma-dangle": [2, "always-multiline"],
-    "quotes": [1, "single"],
     "wrap-regex": 2,
     "no-var": 2,
     "arrow-spacing": 1,
