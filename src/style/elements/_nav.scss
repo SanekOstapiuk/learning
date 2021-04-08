@@ -1,0 +1,46 @@
+
+.nav__link{
+  display: inline;
+  position: relative;
+
+  padding: 0 20px;
+
+
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 2px;
+    height: 100%;
+    background: $black;
+  }
+  &:last-child::after{
+  display: none;
+  }
+
+
+
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+
+}
+
+.nav__link-border{
+  border-bottom: 4px solid $red;
+  position: relative;
+  padding-bottom: 10px;
+  &:hover:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid $red;
+    }
+
+}

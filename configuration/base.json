@@ -1,7 +1,7 @@
 {
   "port": "8050",
   "host": "localhost",
-  "open": false,
+  "open": true,
   "livereload": true,
   "root": "dist/",
   "images": {

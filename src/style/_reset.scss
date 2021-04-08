@@ -21,8 +21,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ol, ul{
+  list-style: none;
+  text-decoration: none;
+ }
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
 
 blockquote, q {
   quotes: none; }
