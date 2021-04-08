@@ -32,7 +32,7 @@ body{
 .main{
   height: 1080px;
   width: 100%;
-  background-color: #black;
+  background-color: $black;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,7 +54,8 @@ line-height: 1.1;
 color: #ffdb00;
 text-transform: uppercase;
 
-margin-bottom: 20px
+margin-bottom: 21px;
+
 }
 
 .main__text{
