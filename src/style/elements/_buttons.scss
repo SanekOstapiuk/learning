@@ -1,0 +1,39 @@
+
+.btn{
+  background: transparent;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+  border-radius: 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+
+}
+
+.btn--main{
+
+  color: $white;
+  border: 2px solid $yellow;
+  transition: all 0.1s linear;
+  max-width: 230px;
+
+   &:hover{
+    color: $yellow;
+    border: 3px solid $white;
+  }
+}
+
+
+.btn--services{
+  max-width: 370px;
+  color: $black;
+  border: 2px solid $yellow;
+  transition: all 0.1s linear;
+  margin: 0 auto;
+
+   &:hover{
+    color: $yellow;
+    border: 2px solid $black;
+  }
+}

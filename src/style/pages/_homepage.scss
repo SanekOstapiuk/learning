@@ -3,7 +3,7 @@ body{
   font-size: 13px;
   font-weight: 400;
   font-family: 'Abel', sans-serif;
-  color: #yellow;
+  color: $yellow;
 
 }
 
@@ -17,52 +17,181 @@ body{
 .header{
   height: 100px;
   width: 100%;
+
+  position: absolute; //fixed
+  z-index: 2;
 }
 
 .header__inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 40px;
 }
 
-.nav__link{
-  font-size: 20px;
-}
 
 .main{
   height: 1080px;
   width: 100%;
   background-color: $black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
 }
 
 .main__inner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  display: inline-block;
+  margin-top: 300px;
+  height: 100%;
+  max-width: 782px;
 }
 
 .main__tittle{
   font-size: 176px;
-letter-spacing: 13px;
-line-height: 1.1;
-color: #ffdb00;
-text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 1.1;
+  color: $yellow;
+  text-transform: uppercase;
 
-margin-bottom: 21px;
-
+  margin-bottom: 20px;
 }
 
 .main__text{
 
-font-size: 15px;
-letter-spacing: 1px;
-line-height: 1.7;
-color: #white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  color: $white;
 
+  margin-bottom:20px;
+}
+
+//  ************ QUOTE *************
+
+.quote{
+  background-color: $yellow;
+}
+
+.container__quote{
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.quote__text{
+  color: $black;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  padding: 50px 0;
+}
+
+// *********** SERVICES ********
+.services{
+    margin: 120px 0;
+}
+.services__inner{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.services__item{
+  width: 33.333%;
+  padding-right: 35px;
+  margin-bottom: 90px;
+}
+
+.services__tittle{
+  margin: 45px 0;
+
+  color: $yellow;
+  font-size: 50px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+}
+
+.services__text{
+  color: #181a1f;
+  font-size: 15px;
+  letter-spacing: 1.13px;
+}
+
+.services__image{
+  width: 77px;
+  background-color: $yellow;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 0;
+}
+
+.services__photo{
+  display: block;
+  width: 27px;
+  height: 26px;
+}
+
+.services__button{
+  text-align: center;
+}
+
+// ************** STATS ********//
+
+.stats{
+  background-color: $black;
+}
+
+.stats__inner{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats__item{
+  width: 25%;
+  margin: 90px 0;
+
+  text-align: center;
+}
+
+.stats__prog{
+  margin: 55px 0;
+
+  height: 44px;
+  color: $white;
+  font-size: 60px;
+}
+
+.stats__name{
+  text-transform: uppercase;
+  color: $yellow;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+// ****************** PORTFOLIO *************//
+
+.portfolio__tittle{
+  margin: 120px 0 50px;
+
+  color: $yellow;
+
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3.75px;
+}
+
+.portfolio__text{
+margin-bottom: 120px;
+
+color: $black;
+
+font-size: 20px;
+line-height: 1.5;
+letter-spacing: 1.5px;
 }

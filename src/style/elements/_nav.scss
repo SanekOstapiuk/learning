@@ -1,0 +1,40 @@
+
+.nav{
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+
+.nav__link {
+  margin-right: 15px;
+
+  color: $white;
+  transition: all 0.3s linear;
+
+  border: 1px solid $yellow;
+
+  &:hover{
+    background-color: $yellow;
+  }
+  &:last-child{
+    margin-right:0;
+  }
+}
+.nav__link a{
+    display: block;
+    padding: 10px 30px;
+}
+
+.nav__link--header{
+  color: $white;
+
+  &:hover{
+    color: $black;
+  }
+}
+
+.nav__link--portfolio{
+  color: $black;
+
+}
