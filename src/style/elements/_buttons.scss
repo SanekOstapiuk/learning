@@ -1,13 +1,29 @@
 
 .btn{
+  text-align: center;
+  margin: 100px 0;
+}
+.btn__key{
   background: transparent;
   display: inline-block;
   text-align: center;
   width: 100%;
   padding: 25px 0;
-  border-radius: 30px;
+
   font-size: 17px;
   text-transform: uppercase;
+
+
+  color: $black;
+  border: 2px solid $yellow;
+  border-radius: 30px;
+  transition: all 0.1s linear;
+  margin: 0 auto;
+
+   &:hover{
+    color: $yellow;
+    border: 2px solid $black;
+  }
 
 }
 
@@ -17,6 +33,7 @@
   border: 2px solid $yellow;
   transition: all 0.1s linear;
   max-width: 230px;
+  border-radius: 30px;
 
    &:hover{
     color: $yellow;
@@ -25,15 +42,6 @@
 }
 
 
-.btn--services{
+.btn--long{
   max-width: 370px;
-  color: $black;
-  border: 2px solid $yellow;
-  transition: all 0.1s linear;
-  margin: 0 auto;
-
-   &:hover{
-    color: $yellow;
-    border: 2px solid $black;
-  }
 }

@@ -137,9 +137,7 @@ body{
   height: 26px;
 }
 
-.services__button{
-  text-align: center;
-}
+
 
 // ************** STATS ********//
 
@@ -180,18 +178,163 @@ body{
   margin: 120px 0 50px;
 
   color: $yellow;
-
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 3.75px;
 }
 
 .portfolio__text{
-margin-bottom: 120px;
 
-color: $black;
+  color: $black;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
 
+.nav--margin{
+  margin: 120px 0;
+}
+// ***************** WORKS ************* //
+
+.works{
+  height: 900px;
+  display: flex;
+}
+
+.works__left{
+  background-image: url(../img/works/works-1.jpg);
+  background-position: center;
+  background-size: cover;
+
+  width: 25%;
+}
+.works__right{
+  width: 75%;
+}
+
+.works__top{
+  height: 50%;
+  display: flex;
+}
+
+
+.top__left{
+
+  width: 50%;
+  background-image: url(../img/works/works-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.top__right{
+
+  width: 50%;
+  background-image: url(../img/works/works-3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.works__btm{
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.btm__left{
+  width: 35%;
+  background-image: url(../img/works/works-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.btm__center{
+  width: 30%;
+  background-image: url(../img/works/works-5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.btm__right{
+  width: 35%;
+  background-image: url(../img/works/works-6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.works__info{
+  padding: 0 70px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s linear;
+
+  &:hover{
+    opacity: 1;
+    background-color: rgba(255, 219, 0, 0.8);
+  }
+}
+
+.works__tittle{
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: $black;
+
+}
+
+.works__text{
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  color: $white;
+
+  margin: 40px 0;
+}
+
+.works__btn{
+  display: block;
+  color: $black;
+  border: 2px solid #fff;
+
+  padding: 15px 0;
+  width: 180px;
+
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 700;
+
+  transition: all 0.3s linear;
+
+  &:hover{
+    border-color: $yellow;
+    background: $yellow;
+  }
+}
+
+// ************ SPONSOR ******************* //
+
+.clients{
+  background: $black;
+}
+
+.clients__item{
+  padding: 120px 0;
+}
+
+.clients__tittle{
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: $yellow;
+}
+.clients__text{
 font-size: 20px;
-line-height: 1.5;
-letter-spacing: 1.5px;
+letter-spacing: 2px;
+line-height: 1.25;
+color: #ffffff;
+
+margin: 50px 0 120px;
+}
+
+.sponsor__list{
+  display: flex;
+  justify-content: space-around;
 }
